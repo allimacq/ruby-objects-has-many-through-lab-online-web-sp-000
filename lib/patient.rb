@@ -25,6 +25,7 @@ class Patient
       if appointment.patient.name == self.name
         array_holder << appointment
       end
+    end
       p array_holder
     #apt.new_appointment(@date,@doctor)
   end
