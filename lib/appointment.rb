@@ -19,8 +19,4 @@ class Appointment
     self.patients
   end
   
-  #def doctor
-   # p self
-  #end
-  
 end
