@@ -20,7 +20,12 @@ class Patient
   
   def appointments
     apt = self
-    p apt
+    array_holder = [ ]
+    Appointment.all.each do |appointment|
+      if appointment.patient.name == self.name
+        array_holder << appointment
+      end
+      p array_holder
     #apt.new_appointment(@date,@doctor)
   end
   
