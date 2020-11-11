@@ -26,8 +26,7 @@ class Patient
   def doctors
     doctors_list = [ ]
     Appointment.all.each do |appointment|
-      p appointment.doctor
-      #doctors_list << appointment.doctor
+      doctors_list << appointment.doctor
     end
     doctors_list
   end
