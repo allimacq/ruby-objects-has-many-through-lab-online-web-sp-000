@@ -20,6 +20,7 @@ class Patient
   
   def appointments
     apt = self
+    p apt
     #apt.new_appointment(@date,@doctor)
   end
   
