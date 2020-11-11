@@ -19,7 +19,6 @@ class Patient
   end
   
   def appointments
-    apt = self
     array_holder = [ ]
     Appointment.all.each do |appointment|
       if appointment.patient.name == self.name
@@ -27,7 +26,6 @@ class Patient
       end
     end
       p array_holder
-    #apt.new_appointment(@date,@doctor)
   end
   
   def doctors
